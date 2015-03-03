@@ -41,7 +41,7 @@ for a in num_data:
 	d2 = {}
 	for b in num_data:
 		if a is not b:
-			d2[b] = hamming_distance(num_data[a], num_data[b])
+			d2[b] = hamming_distance(num_data[a], num_data[b])/float(len(props))
 	d[a] = d2
 
 
